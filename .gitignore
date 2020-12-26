@@ -1,0 +1,4 @@
+.cache/
+.idea/
+public/
+node_modules/

@@ -1,0 +1,56 @@
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyles  = createGlobalStyle`
+  :root {
+    // GREYS
+    --color-grey-1: #fafafa;
+    --color-grey-2: #f0f0f0;
+    --color-grey-3: #e8e8e8;
+    --color-grey-4: #e0e0e0;
+    --color-grey-5: #d8d8d8;
+    --color-grey-6: #d0d0d0;
+    --color-grey-7: #a8a8a8;
+    --color-grey-8: #787878;
+    --color-grey-9: #505050;
+    --color-grey-10: #282828;
+  
+    --color-primary: #90C8F8;
+    --color-primary-light: #ECEFFF;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-error: #ff5646;
+    --color-warning: orange;
+    --color-success: #2bb421;
+    --color-text-dark: var(--color-grey-8);
+    --color-text-light: var(--color-grey-3);
+    
+    --tablet: 48em;
+    --laptop: 75em;
+    --tv: 100em;
+    
+    
+    // BOX SHADOWS
+    --box-shadow-1: 0px 1px 5px rgba(0, 0, 0, 0.15);
+    --box-shadow-2:  .1rem .1rem 2rem rgba(0,0,0,.1);
+    --box-shadow-3: 2px 0px 8px 1px rgba(0,0,0,0.54);
+    --box-shadow-4:  2px 0px 8px 23px rgba(0,0,0,0.54);
+
+    --box-shadow-s1: 0 .5rem .8rem rgba(var(--color-black), .15);
+    --box-shadow-s2: 0 .5rem .8rem rgba(var(--color-black), .15);
+    --box-shadow-s3: 0 .5rem .8rem rgba(var(--color-black), .15);
+    --box-shadow-s4: 0 .5rem .8rem rgba(var(--color-black), .15);
+    
+    --side-padding: 1.3rem;
+
+    .gatsby-image-wrapper img[src*=base64\\,] {
+      image-rendering: -moz-crisp-edges;
+      image-rendering: pixelated;
+    }
+    
+    img {
+      max-width: 100%;
+    }
+  }
+ `;
+
+export default GlobalStyles;
