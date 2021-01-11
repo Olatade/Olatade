@@ -21,21 +21,12 @@ const Typography = createGlobalStyle`
         font-size: 75%; //1rem = 12px; 12px/16px = 75%
       }
     }
-    
-    @media screen and (min-width: ${ScreenSizes.tablet}) {
-      :root{
-        --side-padding: 3rem;
-      }
-     }
-    
-
+    body{
+      font-family: "Muli", serif;
+    }
     @font-face {
       font-family: "Muli";
       src: url(${muli}); // from the page style location
-    }
-    
-    body{
-      font-family: "Muli", serif;
     }
     
     p, li {
@@ -56,7 +47,13 @@ const Typography = createGlobalStyle`
       /* Chrome renders this weird with this font, so we turn it off */
       text-decoration-skip-ink: none;
     }
+    img {
+      max-width: 100%;
+    }
     
+    :root{
+
+    }
     
 `;
 

@@ -40,16 +40,37 @@ const GlobalStyles  = createGlobalStyle`
     --box-shadow-s3: 0 .5rem .8rem rgba(var(--color-black), .15);
     --box-shadow-s4: 0 .5rem .8rem rgba(var(--color-black), .15);
     
-    --side-padding: 1.3rem;
-
     .gatsby-image-wrapper img[src*=base64\\,] {
       image-rendering: -moz-crisp-edges;
       image-rendering: pixelated;
     }
     
-    img {
-      max-width: 100%;
+    
+    // PARAGRAPHS
+    --p-sm: 1.2rem;
+    .p-sm{
+      font-size: var(--p-sm);
     }
+   
+    
+    .h-lg{
+      font-size: 3rem;
+    }
+    .h-xl{
+      font-size: 4.5rem;
+    }
+    .h-md{
+      font-size: 1.7rem;
+    }
+    
+    .bold{
+      font-weight: 900;
+    }
+    
+    --side-pad-lg: 15rem;
+    --side-pad-xs: 1.6rem;
+    --side-pad-sm: 2rem;
+    --side-pad-md: 2.3rem;
   }
  `;
 
