@@ -23,6 +23,8 @@
     }
   },
   "dependencies": {
+    "@primer/components": "^22.0.3",
+    "@primer/css": "^15.2.0",
     "babel-plugin-styled-components": "^1.11.1",
     "dotenv": "^8.2.0",
     "gatsby": "^2.24.63",
