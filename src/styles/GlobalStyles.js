@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import ScreenSizes from "./Responsive";
 
 const GlobalStyles  = createGlobalStyle`
   :root {
@@ -67,10 +68,16 @@ const GlobalStyles  = createGlobalStyle`
       font-weight: 900;
     }
     
-    --side-pad-lg: 15rem;
     --side-pad-xs: 1.6rem;
     --side-pad-sm: 2rem;
     --side-pad-md: 2.3rem;
+    --side-pad-lg: 15rem;
+    @media only screen and (min-width: ${ScreenSizes.tablet}) {
+    --side-pad-xs: 4rem;
+    --side-pad-sm: 2rem;
+    --side-pad-md: 2.3rem;
+    --side-pad-lg: 15rem;
+    }
   }
  `;
 

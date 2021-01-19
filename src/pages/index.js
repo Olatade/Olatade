@@ -24,7 +24,6 @@ export default function HomePage({ data }){
             <p className="p-sm">I recently started documenting my development journey. Read how the show silicon valley changed my life on my medium.</p>
           </div>
         </AboutMeSummary>
-
       </HeaderStyle>
     </div>
   )
