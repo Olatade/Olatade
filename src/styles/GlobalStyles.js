@@ -15,7 +15,7 @@ const GlobalStyles  = createGlobalStyle`
     --color-grey-9: #505050;
     --color-grey-10: #282828;
   
-    --color-primary: #90C8F8;
+    --color-primary: #A03F57;
     --color-primary-light: #ECEFFF;
     --color-white: #fff;
     --color-black: #000;
@@ -49,8 +49,14 @@ const GlobalStyles  = createGlobalStyle`
     
     // PARAGRAPHS
     --p-sm: 1.2rem;
+    --p-xs: 1.3rem;
+    
     .p-sm{
       font-size: var(--p-sm);
+    }
+    .p-xs{
+      font-size: var(--p-xs);
+      line-height: 150%;
     }
    
     

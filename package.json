@@ -42,6 +42,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
+    "react-icons": "^4.2.0",
     "styled-components": "^5.2.0"
   },
   "devDependencies": {
@@ -62,6 +63,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wesbos/slicks-slices"
+    "url": "https://github.com/Olatade/Olatade.git"
   }
 }
