@@ -1,10 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
-import muli from '../assets/fonts/Muli-VariableFont_wght.ttf'
+import Quicksand from '../assets/fonts/Quicksand.ttf'
 import ScreenSizes from './Responsive';
 
 const Typography = createGlobalStyle`
 
     html {
+      margin: 0 !important;
       // this defines what one rem is
       // so changing this will re-define what 1 rem is
       font-size: 62.25%; //1rem = 10px; 10px/16px = 62.25%
@@ -21,12 +22,17 @@ const Typography = createGlobalStyle`
         font-size: 75%; //1rem = 12px; 12px/16px = 75%
       }
     }
-    body{
-      font-family: "Muli", serif;
-    }
+
     @font-face {
-      font-family: "Muli";
-      src: url(${muli}); // from the page style location
+      font-family: "QuickSand";
+      src: url(${Quicksand});
+      font-weight: 300 700;
+      // from the page style location
+    }
+
+    body{
+      font-family: "QuickSand", serif;
+      margin: 0;
     }
     
     p, li {

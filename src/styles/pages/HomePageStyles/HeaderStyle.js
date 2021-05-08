@@ -8,11 +8,13 @@ import header_bg_laptop from "../../../assets/img/header_bg_laptop.jpg";
 
 export const HeaderStyle = styled.div`
   display: grid;
+  margin: 0 !important;
   grid-auto-flow: row;
-  height: 100vh;
+  height: calc(100vh);
   background: url(${header_bg_mobile});
   background-repeat: no-repeat;
   background-size: cover;
+
 
   //change background image on tablets
   @media only screen and (min-width: ${ScreenSizes.tablet}) {
@@ -41,12 +43,12 @@ export const Nav = styled.nav`
     display: flex;
     align-items: center;
     &__image{height: 3rem; margin-right: .5rem;}
-    &__name{ color: var(--color-primary); font-size: 2rem; font-weight: bold; padding: 0; margin: 0; letter-spacing: 1px;}
+    &__name{ color: var(--color-primary); font-size: 1.5rem; font-weight: 700; padding: 0; margin: 0; letter-spacing: 1px;}
 
     // increase brand logo size and brand logo name on laptop device
     @media only screen and (min-width: ${ScreenSizes.laptop}) {
       &__image{height: 3.5rem; }
-      &__name{ font-size: 2rem;}
+      &__name{ font-size: 1.8rem; font-weight: 700;}
     }
   }
   .menu{
@@ -56,14 +58,24 @@ export const Nav = styled.nav`
 
 export const AboutMeSummary = styled.article`
   align-self: start;
-  padding: 20rem var(--side-pad-xs);
+  padding: 0 var(--side-pad-xs);
   max-width: 50rem;
 
   .title .name{
     color: var(--color-primary);
+    font-weight: 600;
   }
   .title .job-title{
     color: var(--color-primary);
+  }
+
+  .description .link{
+    font-weight: 500;
+    color: var(--color-primary);
+    transition: .2s ease-out;
+  }
+  .description .link:hover{
+    color: var(--color-grey-4);
   }
 
   .social-icons{
@@ -74,8 +86,12 @@ export const AboutMeSummary = styled.article`
     svg{
       fill: var(--color-primary);
       font-size: 2rem;
-      transition: .4s ease-in-out;
+      transition: .2s ease-out;
       cursor: pointer;
+
+      @media only screen and (min-width: ${ScreenSizes.tablet}) {
+        font-size: 2.5rem;
+      }
     }
     svg:hover{
       fill: var(--color-grey-4);

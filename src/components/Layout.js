@@ -11,6 +11,7 @@ export default function Layout({ children }) {
       <GlobalStyles/>
       <Typography/>
       {children}
+      {/* <Footer/> */}
     </div>
   );
 }

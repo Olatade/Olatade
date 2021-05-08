@@ -1,7 +1,15 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const FooterStyle = styled.div`
+  /* border: 2px solid red; */
+  background-color: var(--color-primary);
+`;
 
 export default function Footer(){
   return (
-    <footer><p>&copy; Olatade {new Date().getFullYear() }</p></footer>
+    <FooterStyle>
+      <p>&copy; Olatade {new Date().getFullYear() }</p>
+    </FooterStyle>
   );
 }
