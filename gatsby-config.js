@@ -6,7 +6,7 @@ export default {
   siteMetadata: {
     title: `Olatade`,
     siteUrl: 'https://olatade.me',
-    description: 'olatade\'s website',
+    description: 'Olatade - Software Engineer',
     twitter: '@4tade',
   },
   plugins: [
