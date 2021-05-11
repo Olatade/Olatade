@@ -11,8 +11,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "netlify": "netlify dev",
-    "prebuild": "netlify-lambda install"
+    "netlify": "netlify dev"
   },
   "eslintConfig": {
     "extends": [
@@ -29,6 +28,7 @@
     "dotenv": "^8.2.0",
     "gatsby": "^2.24.63",
     "gatsby-image": "^2.7.0",
+    "gatsby-plugin-google-tagmanager": "^3.4.0",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sharp": "^2.10.1",
     "gatsby-plugin-styled-components": "^3.3.10",
