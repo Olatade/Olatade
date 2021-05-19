@@ -7,7 +7,7 @@ import header_bg_tablet from "../assets/img/header_bg_tablet.png";
 import header_bg_laptop from "../assets/img/header_bg_laptop.jpg";
 import ScreenSizes from "../styles/Responsive";
 import { FiFigma } from 'react-icons/fi';
-import {SiGit, SiAdobephotoshop, SiAdobeillustrator, SiTrello, SiJavascript, SiGatsby, SiJest, SiReact, SiGithub, SiPhp, SiMysql, SiGoogletagmanager, SiGoogleanalytics, SiComposer  } from 'react-icons/si';
+import { SiPostman, SiSwagger, SiGit, SiAdobephotoshop, SiAdobeillustrator, SiTrello, SiJavascript, SiGatsby, SiJest, SiReact, SiGithub, SiPhp, SiMysql, SiGoogletagmanager, SiGoogleanalytics, SiComposer  } from 'react-icons/si';
 import { TiFlowMerge} from 'react-icons/ti';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
@@ -150,7 +150,7 @@ export default function StackPage({ data }){
             </p>
 
             <p className="p-xs">
-            If the project is considerably complex, I use <a href="https://www.diagrams.net/">Diagrams.net</a> a powerful team based open source diagramming tool to map out the user flow.
+            If the project is considerably complex, I use <a href="https://www.diagrams.net/">Diagrams.net</a>, a powerful team based open source diagramming tool to map out the user flow.
             </p>
                
           </div>
@@ -204,14 +204,16 @@ export default function StackPage({ data }){
             <span>4</span>
           </div>
           <div className="step__tools">
+          <span className="logo" title="SwaggerHub"><SiSwagger/></span>
             <span className="logo" title="Git"><SiGit/></span>
             <span className="logo" title="Php"><SiPhp/></span>
-            <span className="logo" title="composer"><SiComposer/></span>
             <span className="logo" title="Mysql"><SiMysql/></span>
-            
+            <span className="logo" title="Postman"><SiPostman/></span>
           </div>
           <div className="step__description">
-            <p className="p-xs">Because I like to control as much as possible, I use cleverly written object oriented PHP and MySql to build advanced REST APIs. I am currently working on switching permanenlty using <a href="https://nodejs.org/en/">Node.js</a> + <a href="https://nodejs.org/en/">mongoDB</a> or any other NoSql database</p>
+            <p className="p-xs">Because I like to control as much as possible, I use cleverly written object oriented PHP and MySql to build advanced REST APIs. I am currently working on switching permanenlty to <a href="https://nodejs.org/en/">Node.js</a> + <a href="https://nodejs.org/en/">mongoDB</a> or any other NoSql database</p>
+
+            <p className="p-xs"> I use <a href="https://swagger.io/tools/swaggerhub/">SwaggerHub</a>  to design my APIs and test/document with <a href="https://www.postman.com/">POSTMAN</a></p>
           </div>
         </div>
 
@@ -226,7 +228,7 @@ export default function StackPage({ data }){
           </div>
           <div className="step__description">
             <p className="p-xs">
-              Combining google tag manager and google analytics helps me track my website and app usage accurately.
+              Combining <a href="https://tagmanager.google.com">Google tag manager</a> and  <a href="https://analytics.google.com">Google analytics</a> helps me track my website and app usage accurately.
             </p>   
           </div>
         </div>
