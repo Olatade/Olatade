@@ -57,6 +57,7 @@ const GlobalStyles  = createGlobalStyle`
     .p-xs{
       font-size: var(--p-xs);
       line-height: 150%;
+      margin: .5rem 0;
     }
    
     
