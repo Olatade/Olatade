@@ -15,7 +15,7 @@ export default function HomePage({ data }){
             <img className="brand__image" src={olatade_logo} />
             <p className="brand__name">OLATADE</p>
           </a>
-          <Link to="/stack">How i Build</Link>
+          <Link className="link" to="/stack">HOW I BUILD</Link>
         </Nav>
 
         <AboutMeSummary>

@@ -6,7 +6,6 @@ import header_bg_mobile from "../assets/img/header_bg_mobile.jpg";
 import header_bg_tablet from "../assets/img/header_bg_tablet.png";
 import header_bg_laptop from "../assets/img/header_bg_laptop.jpg";
 import ScreenSizes from "../styles/Responsive";
-import { FaGithub, FaMedium, FaTwitterSquare, FaLinkedin } from 'react-icons/fa';
 import { FiFigma } from 'react-icons/fi';
 import {SiGit, SiAdobephotoshop, SiAdobeillustrator, SiTrello, SiJavascript, SiGatsby, SiJest, SiReact, SiGithub, SiPhp, SiMysql, SiGoogletagmanager, SiGoogleanalytics, SiComposer  } from 'react-icons/si';
 import { TiFlowMerge} from 'react-icons/ti';
@@ -50,11 +49,19 @@ const StackPageStyle = styled.nav`
   .step{
     display: grid;
     grid-template-columns: 7rem 1fr;
-    grid-template-rows: min-content 1fr;
+    grid-template-rows: min-content min-content 1fr;
     border-radius: .4rem;
     background-color: var(--color-white);
     border: 1px solid var(--color-grey-2);
     box-shadow: var(--box-shadow-1);
+
+    &__title{
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      padding: 1.5rem 1.5rem 0 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
 
     &__number{
       display: grid;
@@ -76,16 +83,19 @@ const StackPageStyle = styled.nav`
       grid-auto-flow: column;
       grid-gap: .5rem;
       grid-column: 2 / -1;
-      grid-row: 1 / 2;
+      grid-row: 2 / 3;
       padding: 1.5rem;
       border-bottom: 1px solid var(--color-grey-3);
 
       svg{
-        font-size: 2.5rem;
+        font-size: 2rem;
         padding: 1rem;
         border-radius: 30%;
         border: 2px solid yellow;
         background-color: yellow;
+        @media only screen and (min-width: ${ScreenSizes.tablet}) {
+          font-size: 2.5rem;
+        }
       }
 
     }
@@ -94,6 +104,15 @@ const StackPageStyle = styled.nav`
       grid-column: 2 / -1;
       padding: 1.5rem;
       font-size: 1rem;
+
+      a{
+        font-weight: 500;
+        color: var(--color-primary);
+        transition: .2s ease-out;
+      }
+      a:hover{
+        color: var(--color-grey-4);
+      }
     }
 
   }
@@ -109,12 +128,13 @@ export default function StackPage({ data }){
           <img className="brand__image" src={olatade_logo} />
           <p className="brand__name">OLATADE</p>
         </a>
-        <Link to="/stack">How i Build</Link>
+        <Link className="link" to="/stack">HOW I BUILD</Link>
       </Nav>
 
       <div className="stack">
 
       <div className="step">
+          <h2 className="step__title">PLANNING</h2>
           <div className="step__number">
             <span>1</span>
           </div>
@@ -126,7 +146,7 @@ export default function StackPage({ data }){
           <div className="step__description">
 
             <p className="p-xs">
-              Planning is quite important because it is quite easy to get carried away while working on a project. So, for time management and project tracking, i use <a href="https://trello.com/en">Trello</a>.               
+              Planning is quite important because it is quite easy to get carried away while working on a project. So, for time management and project tracking, I use <a href="https://trello.com/en">Trello</a>.               
             </p>
 
             <p className="p-xs">
@@ -137,6 +157,7 @@ export default function StackPage({ data }){
         </div>
 
         <div className="step">
+        <h2 className="step__title">UI/UX DESIGN</h2>
           <div className="step__number">
             <span>2</span>
           </div>
@@ -157,12 +178,12 @@ export default function StackPage({ data }){
         </div>
 
         <div className="step">
+          <h2 className="step__title">FRONT END DEVELOPMENT</h2>
           <div className="step__number">
             <span>3</span>
           </div>
           <div className="step__tools">
             <span className="logo" title="Git"><SiGit/></span>
-            <span className="logo" title="Git"><SiGithub/></span>
             <span className="logo" title="Vanilla js"><SiJavascript/></span>
             <span className="logo" title="Gatsby.js"><SiGatsby/></span>
             <span className="logo" title="React"><SiReact/></span>
@@ -178,12 +199,12 @@ export default function StackPage({ data }){
 
         
         <div className="step">
+          <h2 className="step__title">BACK END/API DEVELOPMENT</h2>
           <div className="step__number">
             <span>4</span>
           </div>
           <div className="step__tools">
             <span className="logo" title="Git"><SiGit/></span>
-            <span className="logo" title="Github"><SiGithub/></span>
             <span className="logo" title="Php"><SiPhp/></span>
             <span className="logo" title="composer"><SiComposer/></span>
             <span className="logo" title="Mysql"><SiMysql/></span>
@@ -195,6 +216,7 @@ export default function StackPage({ data }){
         </div>
 
         <div className="step">
+        <h2 className="step__title">ANALTICS</h2>
           <div className="step__number">
             <span>5</span>
           </div>

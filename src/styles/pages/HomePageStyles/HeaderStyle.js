@@ -35,6 +35,7 @@ export const Nav = styled.nav`
   background: #fff;
   box-shadow: 0px -2px 18px 3px rgba(0, 0, 0, 0.2);
   align-self: start;
+  align-items: center;
   /* height: 40px; */
   padding: .7rem var(--side-pad-xs);
 
@@ -49,6 +50,17 @@ export const Nav = styled.nav`
     @media only screen and (min-width: ${ScreenSizes.laptop}) {
       &__image{height: 3.5rem; }
       &__name{ font-size: 1.8rem; font-weight: 700;}
+    }
+  }
+
+  .link{
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    font-weight: bold;
+    justify-self: right;
+    transition: .2s ease-in-out;
+    &:hover{
+      color: var(--color-grey-4);
     }
   }
   .menu{
