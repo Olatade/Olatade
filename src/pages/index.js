@@ -3,6 +3,7 @@ import SEO from '../components/SEO';
 import { HeaderStyle, AboutMeSummary, Nav } from '../styles/pages/HomePageStyles/HeaderStyle';
 import olatade_logo from "../assets/img/olatade_logo_primary.png";
 import { FaGithub, FaMedium, FaTwitterSquare, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'gatsby';
 
 export default function HomePage({ data }){
   return (
@@ -14,6 +15,7 @@ export default function HomePage({ data }){
             <img className="brand__image" src={olatade_logo} />
             <p className="brand__name">OLATADE</p>
           </a>
+          <Link to="/stack">How i Build</Link>
         </Nav>
 
         <AboutMeSummary>
