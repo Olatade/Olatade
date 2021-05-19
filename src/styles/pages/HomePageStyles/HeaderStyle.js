@@ -36,7 +36,7 @@ export const Nav = styled.nav`
   box-shadow: 0px -2px 18px 3px rgba(0, 0, 0, 0.2);
   align-self: start;
   align-items: center;
-  /* height: 40px; */
+  height: 3.5rem;
   padding: .7rem var(--side-pad-xs);
 
   .brand{

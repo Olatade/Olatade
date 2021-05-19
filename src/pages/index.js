@@ -12,7 +12,7 @@ export default function HomePage({ data }){
       <HeaderStyle>
         <Nav>
           <a href="/" className="brand">
-            <img className="brand__image" src={olatade_logo} />
+            {/* <img className="brand__image" src={olatade_logo} /> */}
             <p className="brand__name">OLATADE</p>
           </a>
           <Link className="link" to="/stack">HOW I BUILD</Link>
